@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>错误</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🏠 上海二手房数据分析系统</h1>
+            <ul class="nav-links">
+                <li><a href="/">首页</a></li>
+                <li><a href="/dashboard">数据仪表板</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 3rem;">
+        <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <h2 style="color: #e74c3c;">❌ 出错了</h2>
+            <p style="font-size: 1.1rem; margin: 1rem 0;">{{ error }}</p>
+            <a href="/" style="display: inline-block; background: #3498db; color: white; padding: 0.75rem 2rem; border-radius: 4px; text-decoration: none; margin-top: 1rem;">返回首页</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 郑州升达经贸管理学院 毕业设计项目</p>
+    </footer>
+</body>
+</html>

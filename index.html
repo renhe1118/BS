@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上海二手房数据分析系统</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🏠 上海二手房数据分析系统</h1>
+            <ul class="nav-links">
+                <li><a href="/">首页</a></li>
+                <li><a href="/dashboard">数据仪表板</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>基于Python的上海二手房数据分析</h2>
+            <p>提供全面的数据分析、深度洞察和可视化展示</p>
+            <a href="/dashboard" class="btn-primary">进入仪表板</a>
+        </div>
+    </div>
+
+    <div class="container features">
+        <div class="feature-card">
+            <h3>📊 数据处理</h3>
+            <p>自动化清洗、去重、标准化</p>
+        </div>
+        <div class="feature-card">
+            <h3>📈 多维度分析</h3>
+            <p>区域、价格、户型、房龄等</p>
+        </div>
+        <div class="feature-card">
+            <h3>🎨 交互式可视化</h3>
+            <p>Pyecharts交互式图表展示</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔍 智能查询</h3>
+            <p>支持多条件筛选和对比分析</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 郑州升达经贸管理学院 毕业设计项目</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
